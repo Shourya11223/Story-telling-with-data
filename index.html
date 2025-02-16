@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Pattern Analysis</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #004466;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #004466;
+            border-bottom: 2px solid #004466;
+            padding-bottom: 5px;
+        }
+        .chart-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 20px auto;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">📊 Sleep Data Analysis Report</nav>
+    <div class="container">
+        <section class="section">
+            <h2>🔬 Overview of Sleep Data</h2>
+            <p>This analysis explores statistical relationships between age, sleep duration, and awakenings. Using scatter plots, distributions, and correlation metrics, we examine whether specific variables influence sleep patterns.</p>
+        </section>
+        
+        <section class="section">
+            <h2>📊 Age vs. Awakenings</h2>
+            <p>The scatter plot suggests a weak correlation (low Pearson correlation coefficient), indicating that age does not significantly predict the number of awakenings. The variance in awakenings appears independent of age, suggesting that other factors such as health conditions or lifestyle choices might be stronger determinants.</p>
+            <img src="E:/Website/images/age_vs_awakenings.png" alt="Age vs Awakenings" class="chart-img">
+        </section>
+        
+        <section class="section">
+            <h2>⏳ Sleep Duration vs. Awakenings</h2>
+            <p>The data does not show a strong negative correlation, meaning that longer sleep does not necessarily imply fewer awakenings. Some individuals with prolonged sleep still experience frequent interruptions, suggesting that factors beyond sleep length (e.g., sleep quality, medical conditions) play a crucial role.</p>
+            <img src="E:/Website/images/sleep_duration_vs_awakenings.png" alt="Sleep Duration vs Awakenings" class="chart-img">
+        </section>
+        
+        <section class="section">
+            <h2>📌 Distribution of Sleep Metrics</h2>
+            <p>Histogram analysis reveals that most individuals sleep between 7-8 hours, aligning with recommended guidelines. The awakening frequency distribution shows that most individuals experience 0-2 awakenings per night, but a small subset suffers from frequent disturbances, suggesting potential sleep disorders.</p>
+            <img src="E:/Website/images/sleep_duration_bar.png" alt="Sleep Duration Distribution" class="chart-img">
+            <img src="E:/Website/images/awakenings_bar.png" alt="Awakenings Distribution" class="chart-img">
+        </section>
+        
+        <section class="section">
+            <h2>🔎 Key Findings & Statistical Summary</h2>
+            <p>Statistical analysis suggests that age has minimal impact on sleep awakenings, as indicated by the weak correlation coefficient. Additionally, sleep duration does not significantly predict awakening frequency. The data distribution suggests that sleep disturbances are relatively uncommon for most individuals, but a subset with high awakening counts may need further investigation.</p>
+        </section>
+    </div>
+</body>
+</html>
